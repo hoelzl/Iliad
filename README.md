@@ -98,8 +98,8 @@ version have led to several important improvements:
   these environments.) 
 
 * *Iliad* now contains a blackboard system based on
-   [GBBOpen](http://gbbopen.org/) that greatly facilitates the
-   integration and coordination of different reasoning mechanisms.
+  [GBBOpen](http://gbbopen.org/) that greatly facilitates the
+  integration and coordination of different reasoning mechanisms.
    
 * *Iliad* now integrates a hierarchical reinforcement learning system
    based on

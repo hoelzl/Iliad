@@ -1,0 +1,12 @@
+[submodule "Libraries/Snark"]
+	path = Libraries/Snark
+	url = git@github.com:hoelzl/Snark.git
+[submodule "Libraries/Programmable-Reinforcement-Learning"]
+	path = Libraries/Programmable-Reinforcement-Learning
+	url = git@github.com:hoelzl/Programmable-Reinforcement-Learning.git
+[submodule "Libraries/PowerLoom"]
+	path = Libraries/PowerLoom
+	url = git@github.com:hoelzl/PowerLoom.git
+[submodule "Libraries/Screamer"]
+	path = Libraries/Screamer
+	url = git@github.com:hoelzl/Screamer.git
