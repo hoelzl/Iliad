@@ -1,10 +1,5 @@
 (in-package #:poem-user)
 
-;;; TODO: Define a test suite that includes the suites of the individual libraries.
-
-(defun load-snark-tests ()
-  (load (merge-pathnames (ql:where-is-system :snark))))
-
 (defun run-snark-tests ()
   (snark-user::default-print-options-when-starting nil)
   (snark-user::default-print-row-wffs-prettily nil)
