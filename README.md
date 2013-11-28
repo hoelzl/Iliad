@@ -112,6 +112,7 @@ version have led to several important improvements:
    [Screamer](https://github.com/hoelzl/screamer).
    
 
+<!--
 Blackboard System - Achilles
 ----------------------------
 
@@ -191,6 +192,7 @@ Constraint-Solving and Non-Determinism - Bold Dancer
 
 *Bold Dancer* is the subsystem that contains support for
 non-deterministic program execution and control flow.
+-->
 
 Installation and Execution
 --------------------------
@@ -229,8 +231,6 @@ following steps.
   If you are feeling adventurous and want to get the latest features
   you can checkout the development branch instead.)
 
-  **TODO:** explain `git submodule` once all submodules are present.
-
 * Add the directories in which you have installed *Iliad* to ASDF's
   search path. you might have to add a form like
   <pre>
@@ -250,8 +250,11 @@ following steps.
 
 To run the unit test suite for *Odysseus*, enter the commands
 
+    (in-package #:poem-user)
     (asdf:load-system :iliad-tests)
-	(5am:run! 'iliad:iliad-suite)
+	(run-all-tests)
+    
+after loading the `poem-tests` system.
 
 Supported Lisp Implementations
 ------------------------------
