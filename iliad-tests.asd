@@ -6,7 +6,7 @@
   :version "0.0.1"
   :author "Matthias Hoelzl <tc@xantira.com>"
   :license "MIT, see file LICENSE"
-  :depends-on (#:iliad #:screamer-tests)
+  :depends-on (#:iliad #:screamer-tests #:snark-examples)
   :components ((:module "Tests"
                 :components ((:file "run-tests")))))
 

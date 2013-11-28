@@ -254,7 +254,9 @@ To run the unit test suite for *Odysseus*, enter the commands
     (asdf:load-system :iliad-tests)
 	(run-all-tests)
     
-after loading the `poem-tests` system.
+after loading the `poem-tests` system.  Currently this runs the test
+suites for Screamer and Snark; in particular the tests for Snark will
+take a long time.
 
 Supported Lisp Implementations
 ------------------------------

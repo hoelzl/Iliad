@@ -2,5 +2,29 @@
 
 ;;; TODO: Define a test suite that includes the suites of the individual libraries.
 
+(defun load-snark-tests ()
+  (load (merge-pathnames (ql:where-is-system :snark))))
+
+(defun run-snark-tests ()
+  (snark-user::default-print-options-when-starting nil)
+  (snark-user::default-print-row-wffs-prettily nil)
+  (snark-user::default-print-agenda-when-finished nil)
+  (snark-user::default-print-rows-when-derived nil)
+  (snark-user::default-print-rows-when-given nil)
+  (snark-user::default-print-rows-when-processed nil)
+  (snark-user::default-print-rows-when-finished nil)
+  (snark-user::default-print-agenda-when-finished nil)
+  (snark-user::default-print-summary-when-finished nil)
+  (snark-user::overbeek-test :verbose nil)
+  (time (snark-user::steamroller-example))
+  (time (snark-user::front-last-example))
+  (time (snark-user::reverse-example))
+  (time (snark-user::reverse-example :magic t))
+  (time (snark-user::hot-drink-example))
+  (snark-user::coder-test)
+  (time (snark-dpll::queens-problem 8 :find-all-models -1))
+  (snark-user::generate-latin-squares 7))
+
 (defun run-all-tests ()
-  (screamer-tests::test-screamer))
+  (screamer-tests::test-screamer)
+  (run-snark-tests))
