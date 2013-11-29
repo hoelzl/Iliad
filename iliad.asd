@@ -1,4 +1,9 @@
-;;;; iliad.asd
+;;; -*- Mode: Lisp; common-lisp-style: poem -*-
+
+;;; Copyright (c) 2013 Matthias Hölzl
+;;;
+;;; This file is licensed under the MIT license; see the file LICENSE in the root directory for
+;;; further information.
 
 (asdf:defsystem #:iliad
   :serial t
@@ -13,6 +18,8 @@
                ;; #:gbbopen-core
 
                #:alexandria
+               #:closer-mop
+               #:iterate
                #:screamer
                #:snark
                #:hrl)
@@ -21,5 +28,14 @@
                              (:file "package-utils")
                              (:file "package-bootstrap")
                              (:file "packages")
+                             (:file "utilities")
+                             (:file "macros")
+                             (:file "compilation-context")
+                             (:file "terms")
+                             (:file "compilation-unit")
+                             (:file "situation")
+                             (:file "term-operations")
+                             (:file "parser")
+                             (:file "snark")
                              (:file "logic")))))
 
