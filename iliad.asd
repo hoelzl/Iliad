@@ -22,7 +22,8 @@
                #:iterate
                #:screamer
                #:snark
-               #:hrl)
+               #:hrl
+               #:mgl)
   :components ((:module "Core"
                 :components ((:file "bootstrap-package")
                              (:file "package-utils")
