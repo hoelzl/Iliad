@@ -10,3 +10,6 @@
 [submodule "Libraries/Screamer"]
 	path = Libraries/Screamer
 	url = git@github.com:hoelzl/Screamer.git
+[submodule "Libraries/MGL"]
+	path = Libraries/MGL
+	url = git@github.com:hoelzl/MGL.git
