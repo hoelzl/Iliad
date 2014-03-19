@@ -258,6 +258,11 @@ after loading the `poem-tests` system.  Currently this runs the test
 suites for Screamer and Snark; in particular the tests for Snark will
 take a long time.
 
+### Running an example application
+
+There is a simple example program available from [here](https://github.com/hoelzl/WasteRemoval).
+
+
 Supported Lisp Implementations
 ------------------------------
 
