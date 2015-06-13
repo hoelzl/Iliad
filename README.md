@@ -238,9 +238,10 @@ following steps.
         (:tree (:home "Prog/Lisp/Hacking/"))
         (:tree (:home "Prog/Lisp/Imported-Projects/"))
         :inherit-configuration)</pre>
-  to the file `~/.config/common-lisp/source-registry.conf`.
-
-  **TODO:** Windows?
+  to the file `~/.config/common-lisp/source-registry.conf` on
+  Linux/Unix/OSX, or to 
+  `%HOME%\AppData\Local\common-lisp\config\source-registry.conf`
+  on Windows.
   
 * Start your Lisp implementation and enter the following command:
   <pre>(asdf:load-system :iliad)</pre>
